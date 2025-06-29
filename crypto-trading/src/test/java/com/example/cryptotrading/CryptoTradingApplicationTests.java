@@ -1,4 +1,4 @@
-package com.example.crypto_trading;
+package com.example.cryptotrading;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

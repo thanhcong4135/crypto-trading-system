@@ -1,0 +1,1 @@
+INSERT INTO wallet (user_id, currency, balance) VALUES (1, 'USDT', 50000);

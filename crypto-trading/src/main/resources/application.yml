@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:cryptodb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      mode: always
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
