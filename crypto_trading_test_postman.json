@@ -1,0 +1,100 @@
+{
+  "info": {
+    "name": "Crypto Trading API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Latest Price",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/prices/latest?symbol=ETHUSDT",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "prices",
+            "latest"
+          ],
+          "query": [
+            {
+              "key": "symbol",
+              "value": "ETHUSDT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Wallet Balance",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/wallet",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "wallet"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Trade History",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/trades",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "trades"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Trade",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"symbol\":\"BTCUSDT\",\"command\":\"BUY\",\"quantity\":0.1}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/trades",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "trades"
+          ]
+        }
+      }
+    }
+  ]
+}
